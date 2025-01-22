@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>창제목이다.</title>
+	</head>
+
+	<body>
+			<!-- 
+				<audio>태그
+					- 간단하게 오디오 파일을 삽입해서 웹브라우저에 오디오옴을 재생시키는 태그
+					- 문법
+						<audio src="오디오 파일 경로" controls></audio>	
+						
+						설명
+							src="오디오 파일경로" : 이 속성은 삽입할 오디오 파일의 경로를 지정합니다
+												"오디오 파일 경로"는 실제 오디오 파일이 만들어져 있는 위치를 말함
+							controls : 이 속성을 추가하면 웹 브라우저에서 사용자에게 오디오 재생을 위한 
+									      기본 제어판(재생, 일시정지, 볼륨조절, 진행 바 등)을 제공함
+								             이  속성을 작성하지 않으면 오디오는 재생되지만 제어판 인터페이스가 제공되지 않습니다.
+	
+			 -->
+			
+		<audio src="Bourree - Joel Cummins.mp3" controls></audio>	
+		<br>
+		<hr>
+			<!-- 
+				<video>태그
+				- 웹브라우저에 비디오 화면을 보여주는 태그.
+				- 문법
+					<video src="비디오 파일 경로" controls></video>
+		
+		
+			 -->	
+		<video src="sample.mp4" controls loop width="50%" height="400px"></video>
+		<br>
+		<hr>
+			<!-- 
+				<source>태그
+					- audio태그와 video태그에서 파일의 경로와 미디어 타입을 명시하는데 사용되는 태그
+					- 문법
+						<audio controls>
+							<source src="오디오 파일경로" type="미디어 타입">
+						</audio>
+						<video controls>
+							<source src="비디오 파일경로" type="미디어 타입">
+						</video>
+		
+			-->			
+		<audio controls>
+			<source src="Bourree - Joel Cummins.wav" type="audio/wav">
+			<source src="Bourree - Joel Cummins.mp3" type="audio/mp3">
+			지원하지 않는 브라우저입니다.	
+		</audio>				
+				
+				
+					
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
